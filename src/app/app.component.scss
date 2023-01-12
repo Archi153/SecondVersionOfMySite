@@ -1,0 +1,20 @@
+@import "./header/header.component.scss";
+@import "./main/main.component.scss";
+html{
+    background-color: #211A1A;
+}
+body{
+    margin: 0;
+    padding: 0;
+    .LPA{
+        display: none;
+        padding-left: 20px;
+        padding-top: 50px;
+        justify-content: center;
+        .container{
+            .txt{
+                color:#d9d9d9;
+            }
+        }
+    }
+}

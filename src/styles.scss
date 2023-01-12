@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0;
+    background-color:#211A1A ;
+}
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background:  #212121;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 35%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    width: 90%;
+    height: 400px;
+
+
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    color:#d9d9d9;
+    font-size:18px ;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+
+  
+  .loaded_hiding .preloader {
+    transition: 6s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }

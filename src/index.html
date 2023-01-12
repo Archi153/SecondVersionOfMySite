@@ -8,6 +8,40 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
+ 
+
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item" id="qoute"><p id="qoute"></p></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 5000);
+    }
+
+  </script>
+  <script>   
+  var myArray = [
+    "Принципы хороши до поры до времени, но что от них толку, если ты проиграешь?- Дик чейни",
+    "Мы храним память о подвигах, когда лица уже стираются из наших воспоминаний. Память остается, даже когда отбирают все остальное. - Капитан Джон Прайс ",
+    "Правда зависит от точки зрения. Единственная правда заключается в том, что мир — это большая пороховая бочка. Вопрос в том, кто первый чиркнет спичкой? - Капитан Прайс",
+    "Самоуверенность ведёт к беспечности. - Капитан Джон Прайс",
+    "Успех не конечен, ошибка не смертельна: очень мужественно продолжить этот счёт - Уинстон Черчиль",
+    "История будет добра ко мне, так как я намерен её написать - Уинстон Черчиль"
+  ];
+
+  var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+  document.getElementsByTagName('p')[0].innerHTML = randomItem;
+  
+</script>
   <app-root></app-root>
+
 </body>
 </html>

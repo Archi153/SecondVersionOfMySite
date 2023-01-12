@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.body{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    background-image: url("../img/true_bg.jpg");
+    border-radius: 73px;
+    .rdb{
+        text-align: center;
+        color:#ffffff;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        border-bottom: 2px solid;
+    }
+    .blg{
+        .container{
+            .quest{
+                color:#ffffff;
+                .qst{
+                    text-align: center;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                }
+                .answ{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    width: 50vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:250px) {
+    .body{
+        margin-left: 10px;
+        margin-right: 10px;
+        background-position: right;
+        .rdb{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-size: 37px;
+        }
+        .blg{
+        padding-top: 55px;
+        padding-bottom: 95px;
+        padding-inline: 25px;
+            .container{
+                .quest{
+                    .qst{
+                        padding-bottom: 25px;
+                        text-shadow: 1px 1px 1px#1e1e1e ;
+                    }
+                    .answ{
+                        width: 85vw;
+                        
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (min-width:800px) {
+    .body{
+        .rdb{
+            font-size: 50px;
+            padding-top: 95px;
+            padding-bottom: 95px;
+        }
+        .blg{
+            padding-top: 95px;
+            padding-bottom: 95px;
+            padding-inline: 100px;
+            .container{
+                .quest{
+                    .qst{
+                        font-size: 25px;
+                        padding-bottom: 50px;
+                        text-shadow: 1px 1px 1px#1e1e1e ;
+                    }
+                    .answ{
+                        font-size: 20px;
+                        width: 65vw;
+                       
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (min-width:1250px) {
+    .body{
+        .rdb{
+            font-size: 80px;
+            padding-top: 190px;
+            padding-bottom: 190px;
+        }
+        .blg{
+            padding-top: 90px;
+            padding-bottom: 90px;
+            padding-inline: 100px;
+            .container{
+                .quest{
+                    .qst{
+                        font-size: 35px;
+                        padding-bottom: 70px;
+                        
+                    }
+                    .answ{
+                        line-height: 130%;
+                        letter-spacing: 0.04em;
+                        font-size: 30px;
+                        width: 60vw;
+                        
+                    
+                    }
+                }
+            }
+        }
+    }    
+}
